@@ -32,4 +32,5 @@ async def run_ocr(file: UploadFile = File(...)):
             for line in block.lines:
                 extracted_text += line.render() + "\n"
 
-    return JSONResponse(content={"text": extracted_text})
+
+    return JSONResponse(content={"text": extracted_text}) 
